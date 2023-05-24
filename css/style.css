@@ -1,0 +1,343 @@
+/* style.css */
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Menlo,Roboto Mono,monospace;
+  background-color: #f2f2f2;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header h1 span{
+  font-size: smaller;
+  opacity: 85%;
+}
+
+/* Main styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.kotak-hitung {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.luas-persegi {
+  margin: 0 3%;
+}
+
+.keliling-persegi {
+  margin: 0 3%;
+}
+
+.atas, .bawah {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.atas {
+  margin-bottom: 20px;
+}
+
+.atas h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.atas img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.atas p {
+  margin-bottom: 10px;
+}
+
+.bawah h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+form input[type="number"] {
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button[type="submit"],
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.ui-btn {
+  --btn-default-bg: rgb(41, 41, 41);
+  --btn-padding: 15px 20px;
+  --btn-hover-bg: rgb(51, 51, 51);
+  --btn-transition: .3s;
+  --btn-letter-spacing: .1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #FAC921;
+  --default-btn-color: #fff;
+  --font-size: 12px;
+  /* 👆 this field should not be empty */
+  --font-weight: 600;
+  --font-family: Menlo,Roboto Mono,monospace;
+  /* 👆 this field should not be empty */
+}
+
+/* button settings 👆 */
+
+.ui-btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  border: none;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+}
+
+.ui-btn span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.ui-btn span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.ui-btn:hover, .ui-btn:focus {
+  background: var(--btn-hover-bg);
+}
+
+.ui-btn:hover span, .ui-btn:focus span {
+  color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before, .ui-btn:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: ".";
+  }
+
+  10% {
+    content: "^{";
+  }
+
+  15% {
+    content: "-!";
+  }
+
+  20% {
+    content: "#$_";
+  }
+
+  25% {
+    content: "№:0";
+  }
+
+  30% {
+    content: "#{+.";
+  }
+
+  35% {
+    content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "=.,^!";
+  }
+
+  50% {
+    content: "?2@%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+
+
+button {
+  background-color: #1a0202;
+  color: #fff;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Output styles */
+#output_luas,
+#output_keliling {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 50px; 
+}
+
+footer p {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .kotak-hitung {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .luas-persegi,
+  .keliling-persegi {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .atas,
+  .bawah {
+    padding: 10px;
+  }
+  
+  form input[type="number"] {
+    width: 100%;
+  }
+}

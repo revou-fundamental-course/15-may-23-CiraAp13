@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Luas dan Keliling Persegi</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Kalukeper <br />
+        <span>Kalkulator Luas dan Keliling Persegi</span> 
+      </h1>
+    </header>
+    <div class="pembatas"></div>
+    <main>
+      <section class="kotak-hitung">
+        <div class="luas-persegi">
+          <div class="atas">
+            <h2>Luas Persegi</h2>
+            <img src="source/persegi.jpg" alt="rumus-luas-persegi" />
+            <p>Rumus luas persegi yaitu :</p>
+            <p>L = S x S</p>
+            <p>Dimana :</p>
+            <p>L = Luas</p>
+            <p>S = Sisi</p>
+          </div>
+          <div class="bawah">
+            <h2>Hitung Luas Persegi</h2>
+            <form id="luas-form">
+              <label for="sisi-luas">Sisi:</label>
+              <input type="number" id="sisi-luas" name="sisi-luas" required />
+              <button type="submit" id="hitung-luas">Hitung Luas</button>
+            </form>
+            <button class="ui-btn" id="reset-luas">
+              <span>Reset</span>
+            </button>
+            <div id="output_luas"></div>
+          </div>
+        </div>
+        <div class="keliling-persegi">
+          <div class="atas">
+            <h2>Keliling Persegi</h2>
+            <img src="source/persegi.jpg" alt="rumus-keliling-persegi" />
+            <p>Rumus keliling persegi yaitu :</p>
+            <p>K = 4 x S</p>
+            <p>Dimana :</p>
+            <p>K = Keliling</p>
+            <p>S = Sisi</p>
+          </div>
+          <div class="bawah">
+            <h2>Hitung Keliling Persegi</h2>
+            <form id="keliling-form">
+              <label for="sisi-keliling">Sisi:</label>
+              <input
+                type="number"
+                id="sisi-keliling"
+                name="sisi-keliling"
+                required
+              />
+              <button type="submit" id="hitung-keliling">
+                Hitung Keliling
+              </button>
+            </form>
+            <button class="ui-btn" id="reset-keliling">
+              <span>Reset</span>
+            </button>
+            <div id="output_keliling"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="pembatas"></div>
+    <footer>
+      <p>© Alif Putra Cira 2023</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
